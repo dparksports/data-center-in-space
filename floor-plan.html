@@ -1,0 +1,285 @@
+Here's the interior floor plan, drawn top-down. I resized the container width beyond the standard 40-ft spec (2.35 m → 3.6 m) to fit a proper dual-row rack layout with a center service aisle, since a single-row-only layout in a stock container width would make servicing the racks impractical.<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Orbital Data Center — Floor Plan</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 20px; background: #ffffff; }
+  .caption { color: #555; font-size: 13px; margin-top: 8px; }
+</style>
+</head>
+<body>
+<svg viewBox="0 0 1300 620" xmlns="http://www.w 3.org/2000/svg" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="1300" height="620" fill="white"/>
+  <text x="650" y="28" text-anchor="middle" font-size="20" font-weight="bold">
+    Orbital Data Center — Interior Floor Plan
+  </text>
+  <text x="650" y="48" text-anchor="middle" font-size="13" fill="#555">
+    9× NVIDIA GB 200 NVL 72 racks (648 GPUs) + optical scale-out network + power + cooling — resized enclosure
+  </text>
+  <rect x="40" y="70" width="1180" height="340" fill="none" stroke="#222" stroke-width="6"/>
+  <rect x="50" y="80" width="1160" height="320" fill="#fafafa" stroke="#999" stroke-width="1"/>
+  <rect x="50" y="80" width="90" height="320" fill="#f 0f 0f 0" stroke="#aaa"/>
+  <text x="95" y="235" text-anchor="middle" font-size="11" transform="rotate(-90 95,235)">Entry / Airlock Vestibule</text>
+  <rect x="140" y="90" width="90" height="130" fill="#e 0a 640" stroke="#a 97a 25"/>
+  <text x="185" y="150" text-anchor="middle" font-size="11" fill="#3a 2a 00">PDU /</text>
+  <text x="185" y="165" text-anchor="middle" font-size="11" fill="#3a 2a 00">Power</text>
+  <text x="185" y="180" text-anchor="middle" font-size="11" fill="#3a 2a 00">Electronics</text>
+  <rect x="140" y="230" width="90" height="130" fill="#e 0a 640" stroke="#a 97a 25"/>
+  <text x="185" y="285" text-anchor="middle" font-size="11" fill="#3a 2a 00">Battery</text>
+  <text x="185" y="300" text-anchor="middle" font-size="11" fill="#3a 2a 00">Buffer</text>
+  <text x="185" y="315" text-anchor="middle" font-size="10" fill="#3a 2a 00">(eclipse backup)</text>
+  <rect x="230" y="90" width="90" height="130" fill="#4caf 82" stroke="#2f 7d 57"/>
+  <text x="275" y="145" text-anchor="middle" font-size="11" fill="#0e 2e 1e">Spine</text>
+  <text x="275" y="160" text-anchor="middle" font-size="11" fill="#0e 2e 1e">Switches</text>
+  <text x="275" y="175" text-anchor="middle" font-size="10" fill="#0e 2e 1e">(IB Quantum-2)</text>
+  <rect x="230" y="230" width="90" height="130" fill="#4caf 82" stroke="#2f 7d 57"/>
+  <text x="275" y="280" text-anchor="middle" font-size="11" fill="#0e 2e 1e">Leaf Switches</text>
+  <text x="275" y="295" text-anchor="middle" font-size="11" fill="#0e 2e 1e">+ Optical</text>
+  <text x="275" y="310" text-anchor="middle" font-size="11" fill="#0e 2e 1e">Transceivers</text>
+  <rect x="320" y="80" width="660" height="320" fill="#ffffff" stroke="none"/>
+  <g>
+    <rect x="330" y="90" width="110" height="90" fill="#4a 7fd 6" stroke="#2a 4f 96"/>
+    <text x="385" y="130" text-anchor="middle" font-size="12" fill="white" font-weight="bold">Rack A 1</text>
+    <text x="385" y="146" text-anchor="middle" font-size="10" fill="white">GB 200 NVL 72</text>
+    <rect x="450" y="90" width="110" height="90" fill="#4a 7fd 6" stroke="#2a 4f 96"/>
+    <text x="505" y="130" text-anchor="middle" font-size="12" fill="white" font-weight="bold">Rack A 2</text>
+    <text x="505" y="146" text-anchor="middle" font-size="10" fill="white">GB 200 NVL 72</text>
+    <rect x="570" y="90" width="110" height="90" fill="#4a 7fd 6" stroke="#2a 4f 96"/>
+    <text x="625" y="130" text-anchor="middle" font-size="12" fill="white" font-weight="bold">Rack A 3</text>
+    <text x="625" y="146" text-anchor="middle" font-size="10" fill="white">GB 200 NVL 72</text>
+    <rect x="690" y="90" width="110" height="90" fill="#4a 7fd 6" stroke="#2a 4f 96"/>
+    <text x="745" y="130" text-anchor="middle" font-size="12" fill="white" font-weight="bold">Rack A 4</text>
+    <text x="745" y="146" text-anchor="middle" font-size="10" fill="white">GB 200 NVL 72</text>
+    <rect x="810" y="90" width="110" height="90" fill="#4a 7fd 6" stroke="#2a 4f 96"/>
+    <text x="865" y="130" text-anchor="middle" font-size="12" fill="white" font-weight="bold">Rack A 5</text>
+    <text x="865" y="146" text-anchor="middle" font-size="10" fill="white">GB 200 NVL 72</text>
+  </g>
+  <rect x="320" y="190" width="660" height="110" fill="#e 8e 8e 8" stroke="#cfcfcf" stroke-dasharray="6,4"/>
+  <text x="650" y="250" text-anchor="middle" font-size="12" fill="#555">Service Aisle (~1.2 m) — hot/cold aisle, cabling, human access</text>
+  <g>
+    <rect x="330" y="310" width="140" height="90" fill="#4a 7fd 6" stroke="#2a 4f 96"/>
+    <text x="400" y="350" text-anchor="middle" font-size="12" fill="white" font-weight="bold">Rack B 1</text>
+    <text x="400" y="366" text-anchor="middle" font-size="10" fill="white">GB 200 NVL 72</text>
+    <rect x="490" y="310" width="140" height="90" fill="#4a 7fd 6" stroke="#2a 4f 96"/>
+    <text x="560" y="350" text-anchor="middle" font-size="12" fill="white" font-weight="bold">Rack B 2</text>
+    <text x="560" y="366" text-anchor="middle" font-size="10" fill="white">GB 200 NVL 72</text>
+    <rect x="650" y="310" width="140" height="90" fill="#4a 7fd 6" stroke="#2a 4f 96"/>
+    <text x="720" y="350" text-anchor="middle" font-size="12" fill="white" font-weight="bold">Rack B 3</text>
+    <text x="720" y="366" text-anchor="middle" font-size="10" fill="white">GB 200 NVL 72</text>
+    <rect x="810" y="310" width="140" height="90" fill="#4a 7fd 6" stroke="#2a 4f 96"/>
+    <text x="880" y="350" text-anchor="middle" font-size="12" fill="white" font-weight="bold">Rack B 4</text>
+    <text x="880" y="366" text-anchor="middle" font-size="10" fill="white">GB 200 NVL 72</text>
+  </g>
+  <rect x="980" y="90" width="90" height="130" fill="#4fc 3d 1" stroke="#2a 8b 96"/>
+  <text x="1025" y="145" text-anchor="middle" font-size="11" fill="#022a 2e">CDU 1</text>
+  <text x="1025" y="160" text-anchor="middle" font-size="10" fill="#022a 2e">Coolant</text>
+  <text x="1025" y="174" text-anchor="middle" font-size="10" fill="#022a 2e">Distribution</text>
+  <rect x="980" y="230" width="90" height="130" fill="#4fc 3d 1" stroke="#2a 8b 96"/>
+  <text x="1025" y="285" text-anchor="middle" font-size="11" fill="#022a 2e">CDU 2</text>
+  <text x="1025" y="300" text-anchor="middle" font-size="10" fill="#022a 2e">(Redundant)</text>
+  <rect x="1070" y="80" width="140" height="320" fill="#f 5f 5f 5" stroke="#999"/>
+  <line x 1="1210" y 1="140" x 2="1250" y 2="140" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="1215" y="130" font-size="10">To external</text>
+  <text x="1215" y="120" font-size="10">radiator loop</text>
+  <line x 1="1210" y 1="330" x 2="1250" y 2="330" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="1215" y="345" font-size="10">To solar</text>
+  <text x="1215" y="358" font-size="10">array bus</text>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="0" refY="4" orient="auto">
+      <path d="M 0,0 L 8,4 L 0,8 Z" fill="#333"/>
+    </marker>
+  </defs>
+  <line x 1="50" y 1="425" x 2="1210" y 2="425" stroke="#333" stroke-width="1"/>
+  <line x 1="50" y 1="418" x 2="50" y 2="432" stroke="#333"/>
+  <line x 1="1210" y 1="418" x 2="1210" y 2="432" stroke="#333"/>
+  <text x="630" y="442" text-anchor="middle" font-size="12">~12.4 m (interior length)</text>
+  <line x 1="1230" y 1="80" x 2="1230" y 2="400" stroke="#333" stroke-width="1"/>
+  <line x 1="1223" y 1="80" x 2="1237" y 2="80" stroke="#333"/>
+  <line x 1="1223" y 1="400" x 2="1237" y 2="400" stroke="#333"/>
+  <text x="1260" y="245" text-anchor="middle" font-size="12" transform="rotate(90 1260,245)">~3.6 m (resized width)</text>
+  <g font-size="11">
+    <rect x="60" y="470" width="16" height="16" fill="#4a 7fd 6"/>
+    <text x="82" y="482">Compute rack (GB 200 NVL 72, 72 GPUs each)</text>
+    <rect x="60" y="495" width="16" height="16" fill="#4caf 82"/>
+    <text x="82" y="507">Optical scale-out network (leaf/spine switches)</text>
+    <rect x="60" y="520" width="16" height="16" fill="#e 0a 640"/>
+    <text x="82" y="532">Power distribution / battery buffer</text>
+    <rect x="380" y="470" width="16" height="16" fill="#4fc 3d 1"/>
+    <text x="402" y="482">Coolant distribution unit (CDU)</text>
+    <rect x="380" y="495" width="16" height="16" fill="#e 8e 8e 8" stroke="#cfcfcf"/>
+    <text x="402" y="507">Service aisle</text>
+  </g>
+  <text x="650" y="565" text-anchor="middle" font-size="11" fill="#666">
+    Note: enclosure widened from standard 40-ft container spec (2.35 m) to 3.6 m to allow a dual-row
+  </text>
+  <text x="650" y="580" text-anchor="middle" font-size="11" fill="#666">
+    rack layout with a serviceable center aisle. Radiator panels (~1,300–1,400 m²) and solar arrays
+  </text>
+  <text x="650" y="595" text-anchor="middle" font-size="11" fill="#666">
+    (~4,300–4,500 m²) are external deployed structures, connected via bulkhead feedthroughs, not shown to scale.
+  </text>
+</svg>
+<p class="caption">Interior floor plan — packaging estimate, not a validated engineering layout.</p>
+</body>
+</html>
+
+
+```svg
+<svg viewBox="0 0 1300 620" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="1300" height="620" fill="white"/>
+
+  <text x="650" y="28" text-anchor="middle" font-size="20" font-weight="bold">
+    Orbital Data Center — Interior Floor Plan
+  </text>
+  <text x="650" y="48" text-anchor="middle" font-size="13" fill="#555">
+    9× NVIDIA GB200 NVL72 racks (648 GPUs) + optical scale-out network + power + cooling — resized enclosure
+  </text>
+
+  <!-- Outer container shell -->
+  <rect x="40" y="70" width="1180" height="340" fill="none" stroke="#222" stroke-width="6"/>
+  <rect x="50" y="80" width="1160" height="320" fill="#fafafa" stroke="#999" stroke-width="1"/>
+
+  <!-- Zone 1: Vestibule -->
+  <rect x="50" y="80" width="90" height="320" fill="#f0f0f0" stroke="#aaa"/>
+  <text x="95" y="235" text-anchor="middle" font-size="11" transform="rotate(-90 95,235)">Entry / Airlock Vestibule</text>
+
+  <!-- Zone 2: Power -->
+  <rect x="140" y="90" width="90" height="130" fill="#e0a640" stroke="#a97a25"/>
+  <text x="185" y="150" text-anchor="middle" font-size="11" fill="#3a2a00">PDU /</text>
+  <text x="185" y="165" text-anchor="middle" font-size="11" fill="#3a2a00">Power</text>
+  <text x="185" y="180" text-anchor="middle" font-size="11" fill="#3a2a00">Electronics</text>
+
+  <rect x="140" y="230" width="90" height="130" fill="#e0a640" stroke="#a97a25"/>
+  <text x="185" y="285" text-anchor="middle" font-size="11" fill="#3a2a00">Battery</text>
+  <text x="185" y="300" text-anchor="middle" font-size="11" fill="#3a2a00">Buffer</text>
+  <text x="185" y="315" text-anchor="middle" font-size="10" fill="#3a2a00">(eclipse backup)</text>
+
+  <!-- Zone 3: Network -->
+  <rect x="230" y="90" width="90" height="130" fill="#4caf82" stroke="#2f7d57"/>
+  <text x="275" y="145" text-anchor="middle" font-size="11" fill="#0e2e1e">Spine</text>
+  <text x="275" y="160" text-anchor="middle" font-size="11" fill="#0e2e1e">Switches</text>
+  <text x="275" y="175" text-anchor="middle" font-size="10" fill="#0e2e1e">(IB Quantum-2)</text>
+
+  <rect x="230" y="230" width="90" height="130" fill="#4caf82" stroke="#2f7d57"/>
+  <text x="275" y="280" text-anchor="middle" font-size="11" fill="#0e2e1e">Leaf Switches</text>
+  <text x="275" y="295" text-anchor="middle" font-size="11" fill="#0e2e1e">+ Optical</text>
+  <text x="275" y="310" text-anchor="middle" font-size="11" fill="#0e2e1e">Transceivers</text>
+
+  <!-- Compute zone background -->
+  <rect x="320" y="80" width="660" height="320" fill="#ffffff" stroke="none"/>
+
+  <!-- Row A racks (top) -->
+  <g>
+    <rect x="330" y="90" width="110" height="90" fill="#4a7fd6" stroke="#2a4f96"/>
+    <text x="385" y="130" text-anchor="middle" font-size="12" fill="white" font-weight="bold">Rack A1</text>
+    <text x="385" y="146" text-anchor="middle" font-size="10" fill="white">GB200 NVL72</text>
+
+    <rect x="450" y="90" width="110" height="90" fill="#4a7fd6" stroke="#2a4f96"/>
+    <text x="505" y="130" text-anchor="middle" font-size="12" fill="white" font-weight="bold">Rack A2</text>
+    <text x="505" y="146" text-anchor="middle" font-size="10" fill="white">GB200 NVL72</text>
+
+    <rect x="570" y="90" width="110" height="90" fill="#4a7fd6" stroke="#2a4f96"/>
+    <text x="625" y="130" text-anchor="middle" font-size="12" fill="white" font-weight="bold">Rack A3</text>
+    <text x="625" y="146" text-anchor="middle" font-size="10" fill="white">GB200 NVL72</text>
+
+    <rect x="690" y="90" width="110" height="90" fill="#4a7fd6" stroke="#2a4f96"/>
+    <text x="745" y="130" text-anchor="middle" font-size="12" fill="white" font-weight="bold">Rack A4</text>
+    <text x="745" y="146" text-anchor="middle" font-size="10" fill="white">GB200 NVL72</text>
+
+    <rect x="810" y="90" width="110" height="90" fill="#4a7fd6" stroke="#2a4f96"/>
+    <text x="865" y="130" text-anchor="middle" font-size="12" fill="white" font-weight="bold">Rack A5</text>
+    <text x="865" y="146" text-anchor="middle" font-size="10" fill="white">GB200 NVL72</text>
+  </g>
+
+  <!-- Aisle -->
+  <rect x="320" y="190" width="660" height="110" fill="#e8e8e8" stroke="#cfcfcf" stroke-dasharray="6,4"/>
+  <text x="650" y="250" text-anchor="middle" font-size="12" fill="#555">Service Aisle (~1.2 m) — hot/cold aisle, cabling, human access</text>
+
+  <!-- Row B racks (bottom) -->
+  <g>
+    <rect x="330" y="310" width="140" height="90" fill="#4a7fd6" stroke="#2a4f96"/>
+    <text x="400" y="350" text-anchor="middle" font-size="12" fill="white" font-weight="bold">Rack B1</text>
+    <text x="400" y="366" text-anchor="middle" font-size="10" fill="white">GB200 NVL72</text>
+
+    <rect x="490" y="310" width="140" height="90" fill="#4a7fd6" stroke="#2a4f96"/>
+    <text x="560" y="350" text-anchor="middle" font-size="12" fill="white" font-weight="bold">Rack B2</text>
+    <text x="560" y="366" text-anchor="middle" font-size="10" fill="white">GB200 NVL72</text>
+
+    <rect x="650" y="310" width="140" height="90" fill="#4a7fd6" stroke="#2a4f96"/>
+    <text x="720" y="350" text-anchor="middle" font-size="12" fill="white" font-weight="bold">Rack B3</text>
+    <text x="720" y="366" text-anchor="middle" font-size="10" fill="white">GB200 NVL72</text>
+
+    <rect x="810" y="310" width="140" height="90" fill="#4a7fd6" stroke="#2a4f96"/>
+    <text x="880" y="350" text-anchor="middle" font-size="12" fill="white" font-weight="bold">Rack B4</text>
+    <text x="880" y="366" text-anchor="middle" font-size="10" fill="white">GB200 NVL72</text>
+  </g>
+
+  <!-- Zone 5: CDU -->
+  <rect x="980" y="90" width="90" height="130" fill="#4fc3d1" stroke="#2a8b96"/>
+  <text x="1025" y="145" text-anchor="middle" font-size="11" fill="#022a2e">CDU 1</text>
+  <text x="1025" y="160" text-anchor="middle" font-size="10" fill="#022a2e">Coolant</text>
+  <text x="1025" y="174" text-anchor="middle" font-size="10" fill="#022a2e">Distribution</text>
+
+  <rect x="980" y="230" width="90" height="130" fill="#4fc3d1" stroke="#2a8b96"/>
+  <text x="1025" y="285" text-anchor="middle" font-size="11" fill="#022a2e">CDU 2</text>
+  <text x="1025" y="300" text-anchor="middle" font-size="10" fill="#022a2e">(Redundant)</text>
+
+  <!-- Bulkhead / external connections -->
+  <rect x="1070" y="80" width="140" height="320" fill="#f5f5f5" stroke="#999"/>
+  <line x1="1210" y1="140" x2="1250" y2="140" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="1215" y="130" font-size="10">To external</text>
+  <text x="1215" y="120" font-size="10">radiator loop</text>
+
+  <line x1="1210" y1="330" x2="1250" y2="330" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="1215" y="345" font-size="10">To solar</text>
+  <text x="1215" y="358" font-size="10">array bus</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="0" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#333"/>
+    </marker>
+  </defs>
+
+  <!-- Dimensions -->
+  <line x1="50" y1="425" x2="1210" y2="425" stroke="#333" stroke-width="1"/>
+  <line x1="50" y1="418" x2="50" y2="432" stroke="#333"/>
+  <line x1="1210" y1="418" x2="1210" y2="432" stroke="#333"/>
+  <text x="630" y="442" text-anchor="middle" font-size="12">~12.4 m (interior length)</text>
+
+  <line x1="1230" y1="80" x2="1230" y2="400" stroke="#333" stroke-width="1"/>
+  <line x1="1223" y1="80" x2="1237" y2="80" stroke="#333"/>
+  <line x1="1223" y1="400" x2="1237" y2="400" stroke="#333"/>
+  <text x="1260" y="245" text-anchor="middle" font-size="12" transform="rotate(90 1260,245)">~3.6 m (resized width)</text>
+
+  <!-- Legend -->
+  <g font-size="11">
+    <rect x="60" y="470" width="16" height="16" fill="#4a7fd6"/>
+    <text x="82" y="482">Compute rack (GB200 NVL72, 72 GPUs each)</text>
+
+    <rect x="60" y="495" width="16" height="16" fill="#4caf82"/>
+    <text x="82" y="507">Optical scale-out network (leaf/spine switches)</text>
+
+    <rect x="60" y="520" width="16" height="16" fill="#e0a640"/>
+    <text x="82" y="532">Power distribution / battery buffer</text>
+
+    <rect x="380" y="470" width="16" height="16" fill="#4fc3d1"/>
+    <text x="402" y="482">Coolant distribution unit (CDU)</text>
+
+    <rect x="380" y="495" width="16" height="16" fill="#e8e8e8" stroke="#cfcfcf"/>
+    <text x="402" y="507">Service aisle</text>
+  </g>
+
+  <text x="650" y="565" text-anchor="middle" font-size="11" fill="#666">
+    Note: enclosure widened from standard 40-ft container spec (2.35 m) to 3.6 m to allow a dual-row
+  </text>
+  <text x="650" y="580" text-anchor="middle" font-size="11" fill="#666">
+    rack layout with a serviceable center aisle. Radiator panels (~1,300–1,400 m²) and solar arrays
+  </text>
+  <text x="650" y="595" text-anchor="middle" font-size="11" fill="#666">
+    (~4,300–4,500 m²) are external deployed structures, connected via bulkhead feedthroughs, not shown to scale.
+  </text>
+</svg>
+```
+
+A few things worth being upfront about in this plan. The network zone shown here is generously sized — 11 leaf switches at roughly 1U each and a handful of spine switches would physically fit in far less rack space than the compute racks take, so that zone's footprint is more about giving cabling and airflow room than reflecting actual switch bulk. The CDU sizing is a placeholder too — actual coolant distribution unit count and size for 9 racks at ~120 kW each would come from a real thermal engineering pass, not this sketch. And as flagged earlier, the radiator and solar array systems dwarf the enclosure itself once deployed, so this floor plan only captures the pressurized/structural core, not the true "size" of the operating system in orbit.
